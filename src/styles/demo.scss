@@ -1,0 +1,141 @@
+.demo {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.demo__form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.demo__link-icon {
+  margin-left: 1.5rem;
+
+  position: absolute;
+  left: 0;
+}
+
+.demo__input {
+  padding: 0.8rem 4rem;
+
+  font-family: "Satoshi", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: 1px solid rgb(229 231 235);
+  outline-color: rgb(229 231 235);
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.demo__button {
+  margin-right: 0.2rem;
+
+  position: absolute;
+  right: 0;
+  height: 80%;
+  width: 50px;
+  background-color: white;
+  border: 1px solid rgb(229 231 235);
+  color: rgb(156 163 175);
+  border-radius: 7px;
+  transition: all 0.3s ease-in-out;
+
+  &:active {
+    border: 1px solid rgb(156 163 175);
+    margin-bottom: 0.3rem;
+  }
+}
+
+.demo__histories {
+  margin-top: 1rem;
+}
+
+.demo__history {
+  padding: 0.8rem 1rem;
+
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  max-height: 54px;
+  background-color: white;
+  border: 1px solid rgb(229 231 235);
+  border-radius: 5px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.demo__copy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  min-width: 1.7rem;
+  min-height: 1.7rem;
+  box-shadow: inset 10px 50px 94px rgb(199, 199, 199, 0.2);
+}
+
+.demo__copy-icon {
+  width: 45%;
+  height: 45%;
+}
+
+.demo__url {
+  font-family: "Satoshi", sans-serif;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #6d6def;
+}
+
+// Display Result
+
+.demo__result {
+  margin-top: 1rem;
+}
+
+.demo__loader-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.demo__error {
+  font-family: "Inter", sans-serif;
+}
+
+.demo__heading {
+  font-family: "Satoshi", sans-serif;
+  color: rgb(75 85 99);
+  span {
+    background: linear-gradient(
+      to right,
+      rgba(37, 99, 235, 1),
+      rgba(8, 145, 178, 1)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.demo__summary-wrapper {
+  margin-top: 1rem;
+  padding: 1rem 1.5rem;
+
+  border-radius: 5px;
+  box-shadow: inset 10px 50px 94px rgb(199, 199, 199, 0.2);
+  backdrop-filter: blur(8px);
+}
+
+.demo__summary {
+  flex-wrap: wrap;
+  white-space: pre-wrap;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgb(55 65 81);
+}
